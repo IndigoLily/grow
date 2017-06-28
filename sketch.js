@@ -17,8 +17,10 @@ function setup() {
   createCanvas( windowWidth, windowHeight );
 }
 
+var rate = 6;
+
 function draw() {
-  if( frameCount % 6 === 0 ) {
+  if( frameCount % rate === 0 ) {
     circles.push( new circle() );
   }
   var flags = [];
